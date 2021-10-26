@@ -1,5 +1,5 @@
-import { makeExecutableSchema } from "graphql-tools";
 import resolvers from "./resolvers";
+import { makeExecutableSchema } from "graphql-tools";
 
 const typeDefs = `
     type Friend {
@@ -8,7 +8,6 @@ const typeDefs = `
         lastName: String
         gender: Gender
         email: String
-        isFriend: Boolean
         age: Int
         contacts: [Contact]
     }
@@ -38,7 +37,6 @@ const typeDefs = `
         lastName: String
         gender: Gender
         email: String
-        isFriend: Boolean
         age: Int
         contacts: [ContactInput]
     }
